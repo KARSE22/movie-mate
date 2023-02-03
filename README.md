@@ -6,7 +6,7 @@ A two-page [Next.js](https://nextjs.org/) application bootstrapped with [`create
 
 ### Prerequisites
 
-* Node.js and npm
+* Node.js 14.6.0 or newer and npm
 * Next.js
 
 ### Installation
@@ -16,9 +16,11 @@ Clone the repository to your local machine:
 
 Navigate to the directory where the repository was cloned and install the dependencies:
 
-```cd movie-application
+```
+cd movie-mate
 npm install
 ```
+
 
 ### Environment Variables
 
@@ -26,20 +28,40 @@ The application requires certain environment variables to be set in order to wor
 
 * [API_KEY]: The API key required to access the [OMDb API](https://www.omdbapi.com/).
 
-To set the environment variables, create a .env.local file in the root directory of the application and add the following lines:
+To set the environment variables, create a ```.env.local``` file in the root directory of the application and add the following lines:
 
 ```API_KEY=your_api_key_here```
 
 Replace your_api_key_here with the actual API key value.
 
-Make sure to add the .env.local file to your .gitignore file to prevent sensitive information from being pushed to a public repository.
+Make sure to add the ```.env.local``` file to your ```.gitignore``` file to prevent sensitive information from being pushed to a public repository.
 
-### Running the Application
+### Running the Application in Development Mode
 
-To run the application, execute the following command:
-```npm run dev```
+To start a local development server, execute the following command:
+```
+npm run dev
+```
 
-The application will be available at [http://localhost:3000](http://localhost:3000) in your web browser.
+This will start a local server and watch for changes in the code. The application will be available at [http://localhost:3000](http://localhost:3000) in your web browser, as long as you are not already using that port.
+
+### Building the Application for Production
+
+To build the application for production, run the following command: 
+```
+npm run build
+```
+
+This will output minified distribution assets. 
+
+### Starting the Application in Production Mode 
+
+To start the application in production mode, run the following command: 
+```
+npm start
+```
+
+This will start the application and serve the minified distributioni assets. The application will be available at [http://localhost:3000](http://localhost:3000) in your web browser. 
 
 ## How it Works
 
