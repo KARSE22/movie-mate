@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import Image from "next/image";
 import styles from "./MovieCard.module.scss";
-const aboveTheFoldIds = ['tt0371746', 'tt1228705', 'tt2250912', 'tt2015381', 'tt0478970', 'tt0478970'];
+const aboveTheFoldIds = ['tt0371746', 'tt1228705', 'tt2250912', 'tt2015381', 'tt0478970', 'tt0478970', 'tt0800080'];
 
 export default function MovieCard({ movie }) {
 

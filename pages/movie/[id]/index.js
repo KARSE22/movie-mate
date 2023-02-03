@@ -1,5 +1,4 @@
 const serverURL = "http://localhost:3000";
-
 import Image from "next/image";
 import Error from "next/error";
 import { useEffect, useContext, useState } from "react";
