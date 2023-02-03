@@ -20,6 +20,20 @@ Navigate to the directory where the repository was cloned and install the depend
 npm install
 ```
 
+### Environment Variables
+
+The application requires certain environment variables to be set in order to work correctly. The environment variables include:
+
+* [API_KEY]: The API key required to access the [OMDb API](https://www.omdbapi.com/).
+
+To set the environment variables, create a .env.local file in the root directory of the application and add the following lines:
+
+```API_KEY=your_api_key_here```
+
+Replace your_api_key_here with the actual API key value.
+
+Make sure to add the .env.local file to your .gitignore file to prevent sensitive information from being pushed to a public repository.
+
 ### Running the Application
 
 To run the application, execute the following command:
@@ -35,7 +49,7 @@ The home page displays a list of movie poster thumbnails. Each thumbnail is a li
 
 ### Movie Details Page
 
-The movie details page displays a poster, title, description, and rating for a movie. The movie data is fetched from an external API the first time the page is visited. Subsequent visits to the page will load the data from the context instead of making another API request.
+The movie details page displays a poster, title, description, and rating for a movie. The movie data is fetched from the OMDb API the first time the page is visited. Subsequent visits to the page will load the data from the context instead of making another API request.
 
 ### Styling
 
