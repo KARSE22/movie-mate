@@ -1,3 +1,4 @@
+import { server } from "../../../config/";
 import Image from "next/image";
 import Error from "next/error";
 import { useEffect, useContext, useState } from "react";
@@ -18,7 +19,7 @@ export default function MoviePage() {
     if (router.isReady && !state[id]) {
       const fetchMovieData = async () => {
         try {
-          const res = await fetch("/api/movie/${id}");
+          const res = await fetch(`${server}/api/movie/${id}`);
           const errorCode = res.ok ? false : res.status;
 
           if (!errorCode) {
