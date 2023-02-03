@@ -1,38 +1,46 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# MovieMate
+
+A two-page[Next.js](https://nextjs.org/) application bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
+Node.js and npm
+Next.js
+
+### Installation
+
+Clone the repository to your local machine:
+```git clone https://github.com/[your-username]/movie-application.git```
+
+Navigate to the directory where the repository was cloned and install the dependencies:
+
+```cd movie-application
+npm install
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Running the Application
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+To run the application, execute the following command:
+```npm run dev```
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+The application will be available at [http://localhost:3000](http://localhost:3000) in your web browser.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+## How it Works
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+### Home Page
 
-## Learn More
+The home page displays a list of movie poster thumbnails. Each thumbnail is a link that redirects to the movie details page for that movie.
 
-To learn more about Next.js, take a look at the following resources:
+### Movie Details Page
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+The movie details page displays a poster, title, description, and rating for a movie. The movie data is fetched from an external API the first time the page is visited. Subsequent visits to the page will load the data from the store instead of making another API request.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+### Styling
 
-## Deploy on Vercel
+MovieMate uses BEM and CSS modules for styling. The class names follow the BEM naming convention, and the styles are defined in CSS module files.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Data Store
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+The movie data is stored in a React context.
