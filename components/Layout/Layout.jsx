@@ -6,7 +6,7 @@ export default function Layout({ children }) {
     <>
       <header className={styles.header}>
         <Link href="/">
-          <h1 className={styles.header__title}>Movie Mate</h1>
+          <h1 className={styles.header__title}>MovieMate</h1>
         </Link>
       </header>
       {children}
