@@ -1,4 +1,5 @@
 import "@/styles/globals.css";
+import Layout from "../components/Layout/Layout";
 import { useReducer } from "react";
 import MovieContext from "../context/MovieContext";
 
@@ -20,8 +21,10 @@ export default function App({ Component, pageProps }) {
   const [state, dispatch] = useReducer(reducer, initialState);
 
   return (
-    <MovieContext.Provider value={{ state, dispatch }}>
-      <Component {...pageProps} />
-    </MovieContext.Provider>
+    <Layout>
+      <MovieContext.Provider value={{ state, dispatch }}>
+        <Component {...pageProps} />
+      </MovieContext.Provider>
+    </Layout>
   );
 }
