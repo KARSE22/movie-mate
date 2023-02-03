@@ -1,18 +1,18 @@
 # MovieMate
 
-A two-page[Next.js](https://nextjs.org/) application bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+A two-page [Next.js](https://nextjs.org/) application bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
 
 ### Prerequisites
 
-Node.js and npm
-Next.js
+* Node.js and npm
+* Next.js
 
 ### Installation
 
 Clone the repository to your local machine:
-```git clone https://github.com/[your-username]/movie-application.git```
+```git clone https://github.com/[your-username]/movie-mate.git```
 
 Navigate to the directory where the repository was cloned and install the dependencies:
 
@@ -35,7 +35,7 @@ The home page displays a list of movie poster thumbnails. Each thumbnail is a li
 
 ### Movie Details Page
 
-The movie details page displays a poster, title, description, and rating for a movie. The movie data is fetched from an external API the first time the page is visited. Subsequent visits to the page will load the data from the store instead of making another API request.
+The movie details page displays a poster, title, description, and rating for a movie. The movie data is fetched from an external API the first time the page is visited. Subsequent visits to the page will load the data from the context instead of making another API request.
 
 ### Styling
 
