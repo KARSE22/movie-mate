@@ -1,4 +1,4 @@
-const marvelMovies = [
+export const marvelMovies = [
   {
     Title: "Iron Man",
     Year: "2008",
@@ -37,6 +37,7 @@ const marvelMovies = [
   {
     Title: "The Avengers",
     Year: "2012",
+    imdbID: "tt0848228",
     Poster:
       "https://m.media-amazon.com/images/M/MV5BNDYxNjQyMjAtNTdiOS00NGYwLWFmNTAtNThmYjU5ZGI2YTI1XkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_SX300.jpg",
   },
