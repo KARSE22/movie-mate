@@ -18,7 +18,6 @@ export default function MoviePage() {
   useEffect(() => {
     if (router.isReady && !state[id]) {
       const fetchMovieData = async () => {
-        console.log("fetch is being called");
         try {
           const res = await fetch(`${serverURL}/api/movie/${id}`);
           const errorCode = res.ok ? false : res.status;
@@ -38,7 +37,6 @@ export default function MoviePage() {
       };
       fetchMovieData();
     } else {
-      console.log("in state");
       setMovie(state[id]);
     }
   }, [router.isReady, state, id, dispatch]);
